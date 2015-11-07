@@ -1,0 +1,65 @@
+{
+  "name": "shadertoy-export",
+  "version": "0.0.0",
+  "description": "set up a template for ShaderToy style demos",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "dependencies": {
+    "a-big-triangle": "^1.0.2",
+    "canvas-loop": "^1.0.6",
+    "console-redirect": "^1.0.0",
+    "electron-prebuilt": "^0.34.3",
+    "get-canvas-context": "^1.0.1",
+    "gl-fbo": "^2.0.5",
+    "gl-pixel-stream": "^1.0.2",
+    "gl-shader": "^4.0.5",
+    "gl-texture2d": "^2.0.10",
+    "img": "^1.0.0",
+    "keycode": "^2.1.0",
+    "minimist": "^1.2.0",
+    "new-array": "^1.0.0",
+    "object-assign": "^4.0.1",
+    "path-is-absolute": "^1.0.0",
+    "png-stream": "^1.0.4",
+    "right-now": "^1.0.0",
+    "stdout-stream": "^1.4.0",
+    "term-color": "^1.0.1",
+    "touches": "^1.2.0",
+    "xhr-request": "^1.0.1"
+  },
+  "devDependencies": {
+    "browserify": "^12.0.1"
+  },
+  "scripts": {
+    "test": "npm run prepublish && npm run test-prod",
+    "test-prod": "./bin/index.js -f --api --size=512,256 -o images/1.png XslGRr",
+    "prepublish": "NODE_ENV=development node lib/build.js"
+  },
+  "keywords": [
+    "shadertoy",
+    "toy",
+    "shader",
+    "webgl",
+    "glsl",
+    "gl",
+    "shaders",
+    "frag",
+    "fragment"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mattdesl/shadertoy-export.git"
+  },
+  "homepage": "https://github.com/mattdesl/shadertoy-export",
+  "bugs": {
+    "url": "https://github.com/mattdesl/shadertoy-export/issues"
+  },
+  "bin": {
+    "shadertoy-export": "./bin/index.js"
+  }
+}

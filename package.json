@@ -1,7 +1,7 @@
 {
   "name": "shadertoy-export",
   "version": "0.0.0",
-  "description": "set up a template for ShaderToy style demos",
+  "description": "render ShaderToy demos to PNG",
   "main": "index.js",
   "license": "MIT",
   "author": {

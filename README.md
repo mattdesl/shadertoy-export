@@ -2,7 +2,7 @@
 
 [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
 
-A small utility for exporting ShaderToy demos to large (print-ready) resolutions. On my MacBookPro, can export up to 10k * 10k images.
+A small utility for exporting ShaderToy remders to large (print-ready) PNG images. On my MacBookPro, can export up to 10,000x10,000 images.
 
 It only features a small set of shaders (those set to `Public + API`) and doesn't support cube maps, video inputs, etc.
 
